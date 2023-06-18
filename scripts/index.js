@@ -11,6 +11,12 @@ for (let i = 0; i < ranges.length; i++) {
   const range = ranges[i];
   const check = checks[i];
 
+	if (check.checked) {
+		range.max = 100
+	} else {
+		range.max = 300
+	}
+
   range.addEventListener(`input`, () => {
     setRadiuses(check, range, i);
     renderResult();
@@ -25,7 +31,7 @@ verticalRadiusSwitch.addEventListener(`change`, ()=> {
 	for (let i = 4; i < ranges.length; i++) {
 		const range = ranges[i];
 		const check = checks[i];
-
+	
 		range.disabled = !range.disabled
 		check.disabled = !check.disabled
 	}
