@@ -18,52 +18,110 @@
 					<h1 class="text-center mb-5">Border-radius Previewer</h1>
 					<div class="row mb-3">
 						<div class="col-4 user-select-none">
-							<!-- ===== Top Left ===== -->
-								<label for="top-right" class="form-label d-flex justify-content-between">
+							<div class="horizontal-radius">
+								<h2>Horizontal radius</h2>
+								<!-- ===== Top Left ===== -->
+								<label for="top-left-horizontal" class="form-label d-flex justify-content-between">
 									Top left
 									<div>
-										<input class="form-check-input" type="checkbox" value="" id="top-left-check">
-										<label class="form-check-label" for="top-left-check">Percent</label>
+										<input class="form-check-input js-border-check" type="checkbox" value="" id="top-left-horizontal-check">
+										<label class="form-check-label" for="top-left-horizontal-check">Percent</label>
 									</div>
 								</label>
-								<input type="range" class="form-range" id="top-right" min="0" max="100">	
+								<input type="range" class="form-range" id="top-left-horizontal" min="0" max="100">	
 							<!-- ===== /Top Left ===== -->
 
 							<!-- ===== Top Right ===== -->
-							<label for="top-right" class="form-label d-flex justify-content-between">
+							<label for="top-right-horizontal" class="form-label d-flex justify-content-between">
 								Top right
 								<div>
-									<input class="form-check-input" type="checkbox" value="" id="top-right-check">
-									<label class="form-check-label" for="top-right-check">Percent</label>
+									<input class="form-check-input js-border-check" type="checkbox" value="" id="top-right-horizontal-check">
+									<label class="form-check-label" for="top-right-horizontal-check">Percent</label>
 								</div>
 							</label>
-							<input type="range" class="form-range" id="top-right" min="0" max="100">
+							<input type="range" class="form-range" id="top-right-horizontal" min="0" max="100">
 							<!-- ===== /Top Right ===== -->
 							
 							<!-- ===== Bottom Right ===== -->
-							<label for="top-right" class="form-label d-flex justify-content-between">
+							<label for="bottom-right-horizontal" class="form-label d-flex justify-content-between">
 								Bottom right
 								<div>
-									<input class="form-check-input" type="checkbox" value="" id="bottom-right-check">
-									<label class="form-check-label" for="bottom-right-check">Percent</label>
+									<input class="form-check-input js-border-check" type="checkbox" value="" id="bottom-right-horizontal-check">
+									<label class="form-check-label" for="bottom-right-horizontal-check">Percent</label>
 								</div>
 							</label>
-							<input type="range" class="form-range" id="top-right" min="0" max="100">
+							<input type="range" class="form-range" id="bottom-right-horizontal" min="0" max="100">
 							<!-- ===== /Bottom Right ===== -->
 							
 							<!-- ===== Bottom Left ===== -->
-							<label for="top-right" class="form-label d-flex justify-content-between">
+							<label for="bottom-right-horizontal" class="form-label d-flex justify-content-between">
 								Bottom left
 								<div>
-									<input class="form-check-input" type="checkbox" value="" id="bottom-left-check">
-									<label class="form-check-label" for="bottom-left-check">Percent</label>
+									<input class="form-check-input js-border-check" type="checkbox" value="" id="bottom-left-horizontal-check">
+									<label class="form-check-label" for="bottom-left-horizontal-check">Percent</label>
 								</div>
 							</label>
-							<input type="range" class="form-range" id="top-right" min="0" max="100">
+							<input type="range" class="form-range" id="bottom-right-horizontal" min="0" max="100">
 							<!-- ===== /Bottom Left ===== -->
+							</div>
+						
 						</div>
-						<div class="col-8 block">
+						<div class="col-4 user-select-none">
+							<div class="vertical-radius">
+								<div class="d-flex justify-content-between align-items-center">
+									<h2>Vertical radius </h2>
+									<div class="form-check form-switch">
+										<input class="form-check-input js-vertical-check" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+									</div>
+								</div>
+												
+								<!-- ===== Top Left ===== -->
+								<label for="top-left-vertical" class="form-label d-flex justify-content-between">
+									Top left
+									<div>
+										<input class="form-check-input js-border-check" type="checkbox" value="" id="top-left-vertical-check">
+										<label class="form-check-label" for="top-left-vertical-check">Percent</label>
+									</div>
+								</label>
+								<input type="range" class="form-range" id="top-left-vertical" min="0" max="100">	
+							<!-- ===== /Top Left ===== -->
+
+							<!-- ===== Top Right ===== -->
+							<label for="top-right-vertical" class="form-label d-flex justify-content-between">
+								Top right
+								<div>
+									<input class="form-check-input js-border-check" type="checkbox" value="" id="top-right-vertical-check">
+									<label class="form-check-label" for="top-right-vertical-check">Percent</label>
+								</div>
+							</label>
+							<input type="range" class="form-range" id="top-right-vertical" min="0" max="100">
+							<!-- ===== /Top Right ===== -->
 							
+							<!-- ===== Bottom Right ===== -->
+							<label for="bottom-right-vertical" class="form-label d-flex justify-content-between">
+								Bottom right
+								<div>
+									<input class="form-check-input js-border-check" type="checkbox" value="" id="bottom-right-vertical-check">
+									<label class="form-check-label" for="bottom-right-vertical-check">Percent</label>
+								</div>
+							</label>
+							<input type="range" class="form-range" id="bottom-right-vertical" min="0" max="100">
+							<!-- ===== /Bottom Right ===== -->
+							
+							<!-- ===== Bottom Left ===== -->
+							<label for="bottom-right-vertical" class="form-label d-flex justify-content-between">
+								Bottom left
+								<div>
+									<input class="form-check-input js-border-check" type="checkbox" value="" id="bottom-left-vertical-check">
+									<label class="form-check-label" for="bottom-left-vertical-check">Percent</label>
+								</div>
+							</label>
+							<input type="range" class="form-range" id="bottom-right-vertical" min="0" max="100">
+							<!-- ===== /Bottom Left ===== -->
+							</div>
+						</div>
+						<div class="col-4 ">
+							<div class="block"></div>
 						</div>
 					</div>
 					<div class="row">
