@@ -11,19 +11,21 @@ let bottomLeftBorder = borderRadiuses[3];
 let styleValue = `0px 0px 0px 0px`;
 
 for (let i = 0; i < ranges.length; i++) {
-  const range = ranges[i];
+	const range = ranges[i];
   const check = checks[i];
-
+	
   range.addEventListener(`input`, () => {
-    setRadiuses(check, range, i)
+		setRadiuses(check, range, i)
 		renderResult()
   });
 	check.addEventListener(`change`, () => {
     setRadiuses(check, range, i)
 		renderResult()
   });
-
+	
 }
+
+codeArea.addEventListener(`click`, copyToClipboard)
 
 function setRadiuses(check, range, i) {
 	let unit = check.checked ? `%` : `px`;
@@ -48,3 +50,6 @@ function renderResult() {
 	result.innerHTML = styleValue;
 }
 
+function copyToClipboard() {
+	navigator.clipboard.writeText(`border-radius: ${styleValue};`)
+}
