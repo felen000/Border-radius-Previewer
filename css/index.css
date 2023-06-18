@@ -1,0 +1,39 @@
+html, body{
+	height: 100%;
+}
+
+.container-fluid {
+	background: rgb(12,219,210);
+	background: linear-gradient(105deg, rgba(12,219,210,1) 1%, rgba(229,21,210,1) 64%); 
+}
+
+.app {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.block {
+	background-color: rgba(12,219,210,1);
+	border-radius: 0;
+}
+
+.code-area {
+	background-color: #24292e;
+	padding: 15px;
+} 
+
+.code{
+	color: #79b8f5;
+}
+
+.purple {
+	color: #a692e4;
+}
+
+.comment {
+	color: #6a737d;
+}
+
