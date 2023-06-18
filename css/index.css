@@ -37,3 +37,11 @@ html, body{
 	color: #6a737d;
 }
 
+.notice {
+	color: #24292e;
+	transition: all .2s;
+}
+
+.notice.active {
+	color: #79b8f5;	
+}

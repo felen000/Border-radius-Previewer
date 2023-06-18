@@ -52,4 +52,11 @@ function renderResult() {
 
 function copyToClipboard() {
 	navigator.clipboard.writeText(`border-radius: ${styleValue};`)
+
+	notice = document.querySelector(`.notice`)
+	notice.classList.add(`active`)
+	setTimeout(() => {
+		notice.classList.remove(`active`)
+	}, 1000);
+
 }
